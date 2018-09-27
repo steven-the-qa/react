@@ -1,0 +1,13 @@
+// write your code here
+const JSX = <div>
+<h1>H1</h1>
+<p>p</p>
+<ul>
+<li>li</li>
+<li>li</li>
+<li>li</li>
+</ul>
+</div>;
+
+//You can create variables in JSX with more complicated nested HTML, but everything must have one parent wrapper element (div, in this case)
+//If you just have a series of sibling elements, with no wrapper, they won't transpile
