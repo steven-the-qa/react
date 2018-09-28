@@ -1,0 +1,29 @@
+const ChildComponent = () => {
+  return (
+    <div>
+      <p>I am the child</p>
+    </div>
+  );
+};
+
+class ParentComponent extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div>
+        <h1>I am the parent</h1>
+        { /* change code below this line */ }
+        <ChildComponent />
+
+        { /* change code above this line */ }
+      </div>
+    );
+  }
+};
+
+//When you want to compose components together, you can wrap them in a parent component
+//Referring to children within the parent requires you to use custom HTML tags
+//These tags must use the name of the component you want to refer to, and close themselves with '/>'
+//This reference essentially copies that components code and pastes it where your reference is
