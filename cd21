@@ -1,0 +1,20 @@
+
+class StatefulComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    // initialize state here
+    this.state = {
+      name: 'Steven'
+    }
+  }
+  render() {
+    return (
+      <div>
+        <h1>{this.state.name}</h1>
+      </div>
+    );
+  }
+};
+
+//To declare state like this, you need to extend React.Component
+//State is a Javascript object that contains all the information your application needs to know to update its UI as things change
