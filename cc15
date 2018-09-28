@@ -1,0 +1,28 @@
+const List= (props) => {
+  { /* change code below this line */ }
+  return <p>{props.tasks.join(", ")}</p>
+  { /* change code above this line */ }
+};
+
+class ToDo extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div>
+        <h1>To Do Lists</h1>
+        <h2>Today</h2>
+        { /* change code below this line */ }
+        <List tasks={["eat", "train", "code"]}/>
+        <h2>Tomorrow</h2>
+        <List tasks={["walk dog", "shop", "spar"]}/>
+        { /* change code above this line */ }
+      </div>
+    );
+  }
+};
+
+//You can pass arrays to child components too
+//Here we create the to-do list arrays in the ToDo component's render method, passing them to the List component
+//Then in the List component, we return a version of these arrays that is a comma separated list
