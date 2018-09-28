@@ -1,0 +1,24 @@
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: 'freeCodeCamp'
+    }
+  }
+  render() {
+    // change code below this line
+    const name = this.state.name;
+    // change code above this line
+    return (
+      <div>
+        { /* change code below this line */ }
+        <h1>{name}</h1>
+        { /* change code above this line */ }
+      </div>
+    );
+  }
+};
+
+//You can write Javascript directly in the space before the return statement in the render method
+//Here you can assign the state object's name property's value to a variable 
+//Then you can use that variable in the return statement
