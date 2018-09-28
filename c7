@@ -1,0 +1,13 @@
+const MyComponent = function() {
+  // change code below this line
+  return (
+    <div>I am a div</div>
+  )
+
+
+  // change code above this line
+}
+
+//This is how to create a stateless component, which is to say a component that can receive and render data but cannot track changes to it
+//Stateless components can be created using functions like the one above that return either JSX or null
+//Function syntax requires their identifiers start with a capital letter
