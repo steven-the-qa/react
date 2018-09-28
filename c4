@@ -1,0 +1,11 @@
+const JSX = (
+  <div>
+    <h1>Hello World</h1>
+    <p>Lets render this to the DOM</p>
+  </div>
+);
+// change code below this line
+ReactDOM.render(JSX,document.getElementById('challenge-node'));
+
+//'ReactDOM.render()' is a method used to render elements to the DOM
+//Here we are rendering the JSX constant to the DOM node that is a <div> with id 'challenge-node'
