@@ -1,0 +1,21 @@
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: 'freeCodeCamp'
+    }
+  }
+  render() {
+    return (
+      <div>
+        { /* change code below this line */ }
+        <h1>{this.state.name}</h1>
+        { /* change code above this line */ }
+      </div>
+    );
+  }
+};
+
+//The state object is encapuslated within the component and is not available for use in other areas of your code
+//Whenever information in state changes, it triggers a re-rendering of your UI automatically so you don't need to manually update anything
+//If you want to use the State object elsewhere in your code, it must be passed as props
