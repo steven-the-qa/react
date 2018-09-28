@@ -1,0 +1,11 @@
+const JSX = (
+  <div>
+    <h2>Welcome to React!</h2> <br />
+    <p>Be sure to close all tags!</p>
+    <hr />
+
+  </div>
+);
+
+//In JSX, all tags can become self-closing even if they have the potential to contain content, which can be useful in rendering
+//All tags must be closed in JSX, even when they have a non-closed alternative in HTML, like the <br> tag
