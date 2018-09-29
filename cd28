@@ -1,0 +1,32 @@
+class ControlledInput extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      input: ''
+    };
+    // change code below this line
+    this.handleChange = this.handleChange.bind(this);
+    // change code above this line
+  }
+  // change code below this line
+  handleChange(event){
+    this.setState({
+      input: event.target.value
+    })
+  }
+  // change code above this line
+  render() {
+    return (
+      <div>
+        { /* change code below this line */}
+        <input value={this.state.input} onChange={this.handleChange} />
+        { /* change code above this  */}
+        <h4>Controlled Input:</h4>
+        <p>{this.state.input}</p>
+      </div>
+    );
+  }
+};
+
+//Here we create a controlled input, which means we process the input entered into the text field by passing it to the state object before rendering it
+//When the method sends it to a value in the state object, we can do whatever we want to the input before we send it to the DOM
