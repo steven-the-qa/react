@@ -1,0 +1,16 @@
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return <div/>
+  }
+};
+
+// change code below this line
+ReactDOMServer.renderToString(<App/>);
+
+//Every challenge in this section has rendered to the client
+//This challenge shows you how to render to the server
+//Rendering to the server makes your initial page loads faster and gives search engines information about your site 
