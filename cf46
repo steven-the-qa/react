@@ -1,0 +1,26 @@
+
+const frontEndFrameworks = [
+  'React',
+  'Angular',
+  'Ember',
+  'Knockout',
+  'Backbone',
+  'Vue'
+];
+
+function Frameworks() {
+  const renderFrameworks = frontEndFrameworks.map((item) => {
+    return <li key={item}>{item}</li>
+  }); // change code here
+  return (
+    <div>
+      <h1>Popular Front End JavaScript Frameworks</h1>
+      <ul>
+        {renderFrameworks}
+      </ul>
+    </div>
+  );
+};
+
+//Use unique keys for your list items to identify them for later use
+//Keys should uniquely identify that list item element, and array indexes should be used as keys only as a last resort
