@@ -1,0 +1,53 @@
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      users: [
+        {
+          username: 'Jeff',
+          online: true
+        },
+        {
+          username: 'Alan',
+          online: false
+        },
+        {
+          username: 'Mary',
+          online: true
+        },
+        {
+          username: 'Jim',
+          online: false
+        },
+        {
+          username: 'Sara',
+          online: true
+        },
+        {
+          username: 'Laura',
+          online: true
+        }
+      ]
+    }
+  }
+  render() {
+    const usersOnline = this.state.users.filter((user) => {
+      return user.online
+    }); // change code here
+    const renderOnline = usersOnline.map((user) => {
+      return <li key={user.username}>{user.username}</li>
+    }); // change code here
+    return (
+       <div>
+         <h1>Current Online Users:</h1>
+         <ul>
+           {renderOnline}
+         </ul>
+       </div>
+    );
+  }
+};
+
+//This is an example of how you can dynamically render the UI based on what the contents of an array are
+//We use not just '.map()' but also '.filter()' to modify the data and return the portion of the data we want to display
+//In this case, we took an array of users, and displayed the online users ONLY, but this could work regardless of what users there were
