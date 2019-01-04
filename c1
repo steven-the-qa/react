@@ -1,6 +1,0 @@
-
-const JSX = <h1>Hello JSX!</h1>;
-
-
-//This is a simple element declaration in JSX, the language of React
-//JXS is a powerful combination of HTML and Javascript that lets you type Javascript and HTML in the same document without script tags
